@@ -1,0 +1,130 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f7f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1e90ff, #4facfe);
+    color: #fff;
+    padding: 80px 20px 60px 20px;
+    text-align: center;
+}
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+.contact-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.contact-links a:hover {
+    color: #ffd700;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+h2 {
+    color: #1e90ff;
+    margin-bottom: 30px;
+    font-size: 2em;
+    position: relative;
+}
+h2::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #1e90ff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 2px;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.skills-container span {
+    background: #1e90ff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 0.9em;
+    transition: transform 0.3s;
+}
+.skills-container span:hover {
+    transform: scale(1.1);
+}
+
+/* Projects */
+.project-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+.project-card h3 {
+    margin-top: 0;
+    color: #1e90ff;
+}
+.project-card .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #1e90ff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.project-card .btn:hover {
+    background: #4facfe;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px 20px;
+    background: #1e90ff;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+    .skills-container {
+        justify-content: center;
+    }
+    .project-card {
+        padding: 25px 15px;
+    }
+}
